@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">DesafiosDia1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="bem_vindo">Sejam bem vindos!</string>
+    <string name="descricao">Workshop Android</string>
+    <string name="andre">André Felipe</string>
+    <string name="michel">Michel Arruda</string>
+    <string name="jacson">Jacson Hwang</string>
+
+    <string name="fiveMin">5 minutos</string>
+    <string name="tenMin">10 minutos</string>
+    <string name="fithteenMin">15 minutos</string>
+    <string name="twentyMin">20 minutos</string>
+    <string name="twentyFiveMin">25 minutos</string>
+    <string name="thirtyMin">30 minutos</string>
+
+    <string name="terminou">Terminou!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_desafio1">Desafio1</string>
+    <string name="title_activity_desafio2">Desafio2</string>
+    <string name="title_activity_desafio3">Desafio3</string>
+    <string name="title_activity_desafio4">Desafio4</string>
+    <string name="title_activity_desafio5">Desafio5</string>
+    <string name="title_activity_cronomentro">Cronomentros</string>
+    <string name="title_activity_bem_vindos">Bem Vindos!</string>
+
+
+    <string name="TextView">TextView</string>
+    <string name="EditText">EditText</string>
+    <string name="Button">Button</string>
+    <string name="ImageView">ImageView</string>
+
+
+    <string name="nao_existe_layout">Não Existe layout escolhido!</string>
+    <string name="ok">Ok</string>
+
+    <string name="clique_botao">Cliquei no botão pela %1$dª vez</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="capgov.coppetec.com.br.dia1seminario" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".BemVindosActivity"
+            android:label="@string/title_activity_bem_vindos" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Desafio1Activity"
+            android:label="@string/title_activity_desafio1" >
+        </activity>
+        <activity
+            android:name=".Desafio2Activity"
+            android:label="@string/title_activity_desafio2" >
+        </activity>
+        <activity
+            android:name=".Desafio3Activity"
+            android:label="@string/title_activity_desafio3" >
+        </activity>
+        <activity
+            android:name=".Desafio4Activity"
+            android:label="@string/title_activity_desafio4" >
+        </activity>
+        <activity
+            android:name=".Desafio5Activity"
+            android:label="@string/title_activity_desafio5" >
+        </activity>
+        <activity
+            android:name=".CronomentroActivity"
+            android:label="@string/title_activity_cronomentro" >
+        </activity>
+        <!--<activity-->
+        <!--android:name=".BemVindosActivity"-->
+        <!--android:label="@string/title_activity_bem_vindos" >-->
+        <!--</activity>-->
+    </application>
+
+</manifest>
