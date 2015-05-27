@@ -29,7 +29,7 @@ public class CronomentroActivity extends ActionBarActivity {
         fiveMin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                minutes = 0;
+                minutes = 5;
                 chronometer.setBase(SystemClock.elapsedRealtime());
                 chronometer.start();
                 layoutButtons.setVisibility(View.GONE);
