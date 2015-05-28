@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_desafio1" android:title="@string/title_activity_desafio1"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_desafio2" android:title="@string/title_activity_desafio2"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_desafio3" android:title="@string/title_activity_desafio3"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_desafio4" android:title="@string/title_activity_desafio4"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_desafio5" android:title="@string/title_activity_desafio5"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_desafio6" android:title="@string/title_activity_desafio6"
+          android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_cronometro" android:title="@string/title_activity_cronomentro"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
