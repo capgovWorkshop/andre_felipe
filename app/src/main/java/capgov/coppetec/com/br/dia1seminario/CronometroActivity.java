@@ -13,13 +13,13 @@ import android.widget.Chronometer;
 import android.widget.LinearLayout;
 
 
-public class CronomentroActivity extends ActionBarActivity {
+public class CronometroActivity extends ActionBarActivity {
 
     int minutes;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cronomentro);
+        setContentView(R.layout.activity_cronometro);
 
         final LinearLayout layoutTerminou = (LinearLayout) findViewById(R.id.layoutTerminou);
         final LinearLayout layoutButtons = (LinearLayout) findViewById(R.id.layoutButtons);
@@ -164,8 +164,18 @@ public class CronomentroActivity extends ActionBarActivity {
             startActivity(intent);
             finish();
             return true;
+        }else if (id == R.id.action_desafio6) {
+            Intent intent = new Intent(getApplicationContext(), Desafio6Activity.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }else if (id == R.id.action_desafio7) {
+            Intent intent = new Intent(getApplicationContext(), Desafio7Activity.class);
+            startActivity(intent);
+            finish();
+            return true;
         }else if (id == R.id.action_cronometro) {
-            Intent intent = new Intent(getApplicationContext(), CronomentroActivity.class);
+            Intent intent = new Intent(getApplicationContext(), CronometroActivity.class);
             startActivity(intent);
             finish();
             return true;

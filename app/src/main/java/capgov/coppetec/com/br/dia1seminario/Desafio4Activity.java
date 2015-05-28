@@ -84,8 +84,18 @@ public class Desafio4Activity extends ActionBarActivity {
             startActivity(intent);
             finish();
             return true;
+        }else if (id == R.id.action_desafio6) {
+            Intent intent = new Intent(getApplicationContext(), Desafio6Activity.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }else if (id == R.id.action_desafio7) {
+            Intent intent = new Intent(getApplicationContext(), Desafio7Activity.class);
+            startActivity(intent);
+            finish();
+            return true;
         }else if (id == R.id.action_cronometro) {
-            Intent intent = new Intent(getApplicationContext(), CronomentroActivity.class);
+            Intent intent = new Intent(getApplicationContext(), CronometroActivity.class);
             startActivity(intent);
             finish();
             return true;

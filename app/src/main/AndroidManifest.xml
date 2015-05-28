@@ -37,13 +37,30 @@
             android:label="@string/title_activity_desafio5" >
         </activity>
         <activity
-            android:name=".CronomentroActivity"
+            android:name=".CronometroActivity"
             android:label="@string/title_activity_cronomentro" >
         </activity>
-        <!--<activity-->
-        <!--android:name=".BemVindosActivity"-->
-        <!--android:label="@string/title_activity_bem_vindos" >-->
-        <!--</activity>-->
+        <!-- <activity -->
+        <!-- android:name=".BemVindosActivity" -->
+        <!-- android:label="@string/title_activity_bem_vindos" > -->
+        <!-- </activity> -->
+
+        <activity
+            android:name=".Desafio6Activity"
+            android:label="@string/title_activity_desafio6" >
+        </activity>
+        <activity
+            android:name=".Desafio6Activity2"
+            android:label="@string/title_activity_desafio6_activity2" >
+        </activity>
+        <activity
+            android:name=".Desafio7Activity"
+            android:label="@string/title_activity_desafio7" >
+        </activity>
+        <activity
+            android:name=".Desafio7Activity2"
+            android:label="@string/title_activity_desafio7_activity2" >
+        </activity>
     </application>
 
 </manifest>

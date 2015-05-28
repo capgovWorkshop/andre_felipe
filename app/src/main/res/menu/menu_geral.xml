@@ -11,6 +11,11 @@
         android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/action_desafio5" android:title="@string/title_activity_desafio5"
         android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/action_cronometro" android:title="@string/title_activity_cronomentro"
+    <item android:id="@+id/action_desafio6" android:title="@string/title_activity_desafio6"
+          android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_desafio7" android:title="@string/title_activity_desafio7"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_cronometro" android:title="@string/title_activity_cronomentro"
+        android:orderInCategory="100" app:showAsAction="always"
+        android:icon="@drawable/ic_action_action_alarm"/>
 </menu>
