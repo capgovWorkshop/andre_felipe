@@ -129,7 +129,7 @@
                 android:layout_height="20dp"></LinearLayout>
 
             <Button
-                android:id="@+id/submit"
+                android:id="@+id/login"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

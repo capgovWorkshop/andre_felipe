@@ -1,53 +1,20 @@
-package capgov.coppetec.com.br.dia1seminario;
+package capgov.coppetec.com.br.dia1seminario.controller;
 
-import android.content.Context;
+
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
-import com.google.gson.Gson;
+import capgov.coppetec.com.br.dia1seminario.R;
 
-import java.text.SimpleDateFormat;
-
-
-public class Desafio7Activity2 extends ActionBarActivity {
+public class BaseActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_desafio6_activity2);
 
-        SharedPreferences sharedpreferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
-        Gson gson = new Gson();
-        String json = sharedpreferences.getString("cadastro", null);
-        Cadastro cadastro = gson.fromJson(json, Cadastro.class);
-
-//        Cadastro cadastro = (Cadastro) getIntent().getSerializableExtra("cadastro");
-
-        TextView nome = (TextView) findViewById(R.id.nome);
-        TextView password = (TextView) findViewById(R.id.password);
-        TextView email = (TextView) findViewById(R.id.email);
-        TextView phone = (TextView) findViewById(R.id.phone);
-        TextView data = (TextView) findViewById(R.id.date);
-        TextView sex = (TextView) findViewById(R.id.sex);
-
-        if(cadastro != null) {
-            nome.setText(cadastro.getNome());
-            password.setText(cadastro.getPassword());
-            email.setText(cadastro.getEmail());
-            phone.setText(cadastro.getPhone());
-            sex.setText(cadastro.getSex());
-
-
-            if (cadastro.getData() != null) {
-                SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-                data.setText(format.format(cadastro.getData()));
-            }
-        }
     }
 
     @Override
@@ -100,8 +67,8 @@ public class Desafio7Activity2 extends ActionBarActivity {
             startActivity(intent);
             finish();
             return true;
-        }else if (id == R.id.action_desafio7) {
-            Intent intent = new Intent(getApplicationContext(), Desafio7Activity.class);
+        }else if (id == R.id.action_desafio8) {
+            Intent intent = new Intent(getApplicationContext(), Desafio8LoginActivity.class);
             startActivity(intent);
             finish();
             return true;

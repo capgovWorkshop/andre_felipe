@@ -1,11 +1,8 @@
-package capgov.coppetec.com.br.dia1seminario;
+package capgov.coppetec.com.br.dia1seminario.controller;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -20,8 +17,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import capgov.coppetec.com.br.dia1seminario.R;
+import capgov.coppetec.com.br.dia1seminario.model.Pessoa;
 
-public class Desafio7Activity extends ActionBarActivity {
+
+public class Desafio7Activity extends BaseActivity {
 
     int year;
     int month;
@@ -38,7 +38,7 @@ public class Desafio7Activity extends ActionBarActivity {
         final EditText phone = (EditText) findViewById(R.id.phone);
         final DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
         final RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroupSex);
-        Button submit = (Button) findViewById(R.id.submit);
+        Button submit = (Button) findViewById(R.id.login);
 
         final Calendar c = Calendar.getInstance();
         year = c.get(Calendar.YEAR);
@@ -83,81 +83,20 @@ public class Desafio7Activity extends ActionBarActivity {
                     sexStr = getString(R.string.female);
                 }
 
-                Cadastro cadastro = new Cadastro(nomeStr,emailStr,passwordStr,dateTime,phoneStr, sexStr);
+                Pessoa pessoa = new Pessoa(nomeStr,emailStr,passwordStr,dateTime,phoneStr, sexStr);
 
                 SharedPreferences mPrefs = getSharedPreferences("preferences", MODE_PRIVATE);
 
                 SharedPreferences.Editor prefsEditor = mPrefs.edit();
                 Gson gson = new Gson();
-                String json = gson.toJson(cadastro);
-                prefsEditor.putString("cadastro", json);
+                String json = gson.toJson(pessoa);
+                prefsEditor.putString("pessoa", json);
                 prefsEditor.commit();
 
                 Intent intent = new Intent(Desafio7Activity.this, Desafio7Activity2.class);
-//                intent.putExtra("cadastro", cadastro);
                 startActivity(intent);
             }
         });
 
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_geral, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_desafio1) {
-            Intent intent = new Intent(getApplicationContext(), Desafio1Activity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }else if (id == R.id.action_desafio2) {
-            Intent intent = new Intent(getApplicationContext(), Desafio2Activity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }else if (id == R.id.action_desafio3) {
-            Intent intent = new Intent(getApplicationContext(), Desafio3Activity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }else if (id == R.id.action_desafio4) {
-            Intent intent = new Intent(getApplicationContext(), Desafio4Activity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }else if (id == R.id.action_desafio5) {
-            Intent intent = new Intent(getApplicationContext(), Desafio5Activity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }else if (id == R.id.action_desafio6) {
-            Intent intent = new Intent(getApplicationContext(), Desafio6Activity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }else if (id == R.id.action_desafio7) {
-            Intent intent = new Intent(getApplicationContext(), Desafio7Activity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }else if (id == R.id.action_cronometro) {
-            Intent intent = new Intent(getApplicationContext(), CronometroActivity.class);
-            startActivity(intent);
-            finish();
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

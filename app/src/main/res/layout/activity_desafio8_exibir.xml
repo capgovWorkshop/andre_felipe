@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:orientation="vertical"
-    tools:context="afpcsoft.com.br.desafiosdia1.Desafio7Activity2">
+    tools:context="afpcsoft.com.br.desafiosdia1.Desafio8Activity3">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -111,6 +111,13 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"></LinearLayout>
+
+            <Button
+                android:id="@+id/alterar"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alterar"/>
 
         </LinearLayout>
     </ScrollView>

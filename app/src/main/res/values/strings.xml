@@ -24,9 +24,16 @@
     <string name="title_activity_desafio4">Desafio4</string>
     <string name="title_activity_desafio5">Desafio5</string>
     <string name="title_activity_desafio6">Desafio6</string>
+    <string name="title_activity_desafio7">Desafio7</string>
+    <string name="title_activity_desafio8">Desafio8</string>
     <string name="title_activity_cronomentro">Cronômetro</string>
     <string name="title_activity_bem_vindos">Bem Vindos!</string>
 
+    <string name="title_activity_desafio7_activity2">Desafio7Activity2</string>
+    <string name="title_activity_desafio8_Login">Desafio8 - Login</string>
+    <string name="title_activity_desafio8_cadastrar">Desafio8 - Cadastrar</string>
+    <string name="title_activity_desafio8_exibir">Desafio8 - Exibir</string>
+    <string name="title_activity_desafio8_alterar">Desafio8 - Alterar</string>
 
     <string name="TextView">TextView</string>
     <string name="EditText">EditText</string>
@@ -34,13 +41,15 @@
     <string name="ImageView">ImageView</string>
     <string name="avancar">Avançar</string>
 
+    <string name="logar">Logar</string>
+    <string name="cadatrar">Cadastrar</string>
+    <string name="alterar">Alterar Dados</string>
 
     <string name="nao_existe_layout">Não Existe layout escolhido!</string>
     <string name="ok">Ok</string>
 
     <string name="clique_botao">Cliquei no botão pela %1$dª vez</string>
     <string name="title_activity_desafio6_activity2">Desafio6Activity2</string>
-
 
     <string name="title_nome">Nome</string>
     <string name="title_password">Senha</string>
@@ -53,11 +62,10 @@
     <string name="editText_email">Adicione o email...</string>
     <string name="editText_phone">Adicione o telefone...</string>
 
-
     <string name="male">Masculino</string>
     <string name="female">Feminino</string>
-    <string name="title_activity_desafio7">Desafio7</string>
-    <string name="title_activity_desafio7_activity2">Desafio7Activity2</string>
+
+    <string name="cant_login">Usuário inexistente!</string>
 
 
 </resources>

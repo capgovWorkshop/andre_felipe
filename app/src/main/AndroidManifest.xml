@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".BemVindosActivity"
+            android:name=".controller.BemVindosActivity"
             android:label="@string/title_activity_bem_vindos" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,27 +17,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Desafio1Activity"
+            android:name=".controller.Desafio1Activity"
             android:label="@string/title_activity_desafio1" >
         </activity>
         <activity
-            android:name=".Desafio2Activity"
+            android:name=".controller.Desafio2Activity"
             android:label="@string/title_activity_desafio2" >
         </activity>
         <activity
-            android:name=".Desafio3Activity"
+            android:name=".controller.Desafio3Activity"
             android:label="@string/title_activity_desafio3" >
         </activity>
         <activity
-            android:name=".Desafio4Activity"
+            android:name=".controller.Desafio4Activity"
             android:label="@string/title_activity_desafio4" >
         </activity>
         <activity
-            android:name=".Desafio5Activity"
+            android:name=".controller.Desafio5Activity"
             android:label="@string/title_activity_desafio5" >
         </activity>
         <activity
-            android:name=".CronometroActivity"
+            android:name=".controller.CronometroActivity"
             android:label="@string/title_activity_cronomentro" >
         </activity>
         <!-- <activity -->
@@ -46,20 +46,36 @@
         <!-- </activity> -->
 
         <activity
-            android:name=".Desafio6Activity"
+            android:name=".controller.Desafio6Activity"
             android:label="@string/title_activity_desafio6" >
         </activity>
         <activity
-            android:name=".Desafio6Activity2"
+            android:name=".controller.Desafio6Activity2"
             android:label="@string/title_activity_desafio6_activity2" >
         </activity>
         <activity
-            android:name=".Desafio7Activity"
+            android:name=".controller.Desafio7Activity"
             android:label="@string/title_activity_desafio7" >
         </activity>
         <activity
-            android:name=".Desafio7Activity2"
+            android:name=".controller.Desafio7Activity2"
             android:label="@string/title_activity_desafio7_activity2" >
+        </activity>
+        <activity
+            android:name=".controller.Desafio8CadastroActivity"
+            android:label="@string/title_activity_desafio8_cadastrar" >
+        </activity>
+        <activity
+            android:name=".controller.Desafio8LoginActivity"
+            android:label="@string/title_activity_desafio8_Login" >
+        </activity>
+        <activity
+            android:name=".controller.Desafio8ExibirActivity"
+            android:label="@string/title_activity_desafio8_exibir" >
+        </activity>
+        <activity
+            android:name=".controller.Desafio8AlterarActivity"
+            android:label="@string/title_activity_desafio8_alterar" >
         </activity>
     </application>
 
