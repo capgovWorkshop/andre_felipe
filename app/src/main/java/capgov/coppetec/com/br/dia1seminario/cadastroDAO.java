@@ -5,7 +5,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  * Created by michel on 27/05/15.
@@ -22,7 +25,8 @@ public class cadastroDAO {
         private Context context;
 
         public PessoaDAO(Context context) {
-            this.db = DatabaseHelper.getInstance(context).getDb();
+            DatabaseHelper dbh = new DatabaseHelper();
+            this.db = dbh.getDb();
             this.context = context;
         }
 
@@ -41,7 +45,16 @@ public class cadastroDAO {
                 cadastro.setNome(cursor.getString(0));
                 cadastro.setPassword(cursor.getString(1));
                 cadastro.setEmail(cursor.getString(2));
-                cadastro.setData(cursor.getString(3));
+
+                SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+                Date dateTime = new Date();
+                try {
+                    dateTime = format.parse(cursor.getString(3));
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+
+                cadastro.setData(dateTime);
                 cadastro.setPhone(cursor.getString(4));
                 cadastro.setSex(cursor.getString(5));
 
@@ -84,7 +97,7 @@ public class cadastroDAO {
                 values.put("nome", cadastro.getNome());
                 values.put("password", cadastro.getPassword());
                 values.put("email", cadastro.getEmail());
-                values.put("data", cadastro.getData());
+                values.put("data", cadastro.getData().toString());
                 values.put("phone", cadastro.getPassword());
                 values.put("sex", cadastro.getSex());
 
