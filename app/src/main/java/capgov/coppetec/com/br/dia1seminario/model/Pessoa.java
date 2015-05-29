@@ -1,5 +1,7 @@
 package capgov.coppetec.com.br.dia1seminario.model;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,6 +17,7 @@ public class Pessoa implements Serializable{
     public static final String KEY_TELEFONE = "telefone";
     public static final String KEY_SEXO = "sexo";
 
+    @SerializedName("name")
     private String nome;
     private String senha;
     private String email;

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="capgov.coppetec.com.br.dia1seminario" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -76,6 +78,10 @@
         <activity
             android:name=".controller.Desafio8AlterarActivity"
             android:label="@string/title_activity_desafio8_alterar" >
+        </activity>
+        <activity
+            android:name=".controller.Desafio9Activity"
+            android:label="@string/title_activity_desafio9" >
         </activity>
     </application>
 

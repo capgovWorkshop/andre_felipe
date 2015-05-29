@@ -17,6 +17,8 @@
         android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/action_desafio8" android:title="@string/title_activity_desafio8"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_desafio9" android:title="@string/title_activity_desafio9"
+        android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/action_cronometro" android:title="@string/title_activity_cronomentro"
         android:orderInCategory="100" app:showAsAction="always"
         android:icon="@drawable/ic_action_action_alarm"/>

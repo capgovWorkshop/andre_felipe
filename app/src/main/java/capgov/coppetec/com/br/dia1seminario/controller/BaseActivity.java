@@ -72,6 +72,11 @@ public class BaseActivity extends ActionBarActivity {
             startActivity(intent);
             finish();
             return true;
+        }else if (id == R.id.action_desafio9) {
+            Intent intent = new Intent(getApplicationContext(), Desafio9Activity.class);
+            startActivity(intent);
+            finish();
+            return true;
         }else if (id == R.id.action_cronometro) {
             Intent intent = new Intent(getApplicationContext(), CronometroActivity.class);
             startActivity(intent);
